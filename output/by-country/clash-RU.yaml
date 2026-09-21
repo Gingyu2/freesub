@@ -5,22 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 185.221.223.198
-  port: 2053
+  server: 45.93.201.119
+  port: 443
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 10394279-283c-4ab8-8529-f1e0a4c61bc8
   tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /go/archive?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
+  reality-opts:
+    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+    short-id: 6f3c1b8e5d2a4f7c
+  servername: vir2albridge.com
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: moktana.net.v1.StreamService
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 45.148.30.11
+  server: 130.17.27.204
   port: 443
   udp: true
   type: vless
@@ -28,28 +28,21 @@ proxies:
   tls: true
   servername: cdn8848.776676.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /season/classify?ed=2560
+    path: /player/shop?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 194.76.172.160
-  port: 443
+  server: 91.240.86.70
+  port: 22443
   udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: hy.quattro-tech.ru
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cp/docs?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 132.243.203.207
+  server: 64.225.65.116
   port: 8443
   udp: true
   type: vless
@@ -59,17 +52,23 @@ proxies:
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /bd/pictures?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 91.240.86.70
-  port: 22443
+  server: 31.76.18.213
+  port: 443
   udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /product/uploads/new?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   server: 5.129.251.213
   port: 46446
@@ -85,6 +84,21 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: fromabroad-grpc-v1
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  server: 107.189.23.153
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /archives/note/read?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,6 +110,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -107,5 +122,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
 rules:
 - MATCH,PROXIES
