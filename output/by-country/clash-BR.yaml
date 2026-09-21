@@ -17,48 +17,21 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  server: 35.199.90.53
-  port: 443
-  udp: true
-  type: vless
-  uuid: e9c2ed7f-79ab-40a8-8910-24468f5da712
-  tls: true
-  reality-opts:
-    public-key: 0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw
-    short-id: 4b414f69a06e1e81
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇧🇷 巴西 (Brazil) 03 - xiaohe
-  server: 172.237.120.201
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇧🇷 巴西 (Brazil) 04 - xiaohe
-  server: 164.92.147.213
-  port: 2087
+  server: 64.227.67.161
+  port: 2083
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
   servername: cdn8848.776676.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /city/my
+    path: /
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇧🇷 巴西 (Brazil) 05 - xiaohe
-  server: 188.130.207.30
+- name: 🇧🇷 巴西 (Brazil) 03 - xiaohe
+  server: 5.101.114.44
   port: 2053
   udp: true
   type: vless
@@ -68,7 +41,21 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /collection/directory?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇧🇷 巴西 (Brazil) 04 - xiaohe
+  server: 46.8.178.234
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /about/ads/articles?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
@@ -80,7 +67,6 @@ proxy-groups:
   - 🇧🇷 巴西 (Brazil) 02 - xiaohe
   - 🇧🇷 巴西 (Brazil) 03 - xiaohe
   - 🇧🇷 巴西 (Brazil) 04 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -90,6 +76,5 @@ proxy-groups:
   - 🇧🇷 巴西 (Brazil) 02 - xiaohe
   - 🇧🇷 巴西 (Brazil) 03 - xiaohe
   - 🇧🇷 巴西 (Brazil) 04 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 05 - xiaohe
 rules:
 - MATCH,PROXIES
