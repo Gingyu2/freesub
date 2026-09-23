@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
-  server: 193.56.135.137
+  server: 193.56.135.212
   port: 9543
   udp: true
   type: vless
@@ -18,7 +18,7 @@ proxies:
   servername: storage.yandexcloud.net
   client-fingerprint: chrome
 - name: 🇮🇶 IQ 02 - xiaohe
-  server: 193.8.215.96
+  server: 185.255.179.11
   port: 9443
   udp: true
   type: vless
