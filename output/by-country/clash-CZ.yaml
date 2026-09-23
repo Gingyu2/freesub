@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 188.114.96.3
+  server: 104.21.58.246
   port: 443
   udp: true
   type: vless
-  uuid: 893096ae-ed76-4440-bc34-f77c4872540f
+  uuid: 709b1cf4-a386-4cbf-bcf4-46f03c4788a8
   tls: true
-  servername: masterserver1-vsh.kalleh.workers.dev
+  servername: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoieE1zSFhYR2hkcHZGUHI3cSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /vl/MoCdc0wOC7T6JiYflef9hYfM?ed=2560
     headers:
-      Host: masterserver1-vsh.kalleh.workers.dev
+      Host: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

@@ -4,13 +4,13 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: aged-silence-8d7d.tahaggs.workers.dev
+- name: 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  server: 151.101.56.7
   port: 443
   udp: true
   type: trojan
-  password: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
-  sni: aged-silence-8d7d.tahaggs.workers.dev
+  password: MITIVpN
+  sni: ssl.fastly.com
   skip-cert-verify: false
   network: ws
   ws-opts:
@@ -20,12 +20,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
