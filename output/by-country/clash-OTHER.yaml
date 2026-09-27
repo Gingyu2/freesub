@@ -4,32 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 188.114.97.1
-  port: 2053
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: www.terence-tunnel.org
+  port: 443
   udp: true
   type: vless
-  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
+  uuid: c47eb7ab-2c2d-44e0-80cc-bb104f89a137
   tls: true
-  servername: bold-term-4edd.mbigspot.workers.dev
+  servername: www.terence-tunnel.org
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: bold-term-4edd.mbigspot.workers.dev
+    path: /tunnel
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 rules:
 - MATCH,PROXIES
