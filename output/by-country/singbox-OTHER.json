@@ -5,24 +5,15 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "172.66.44.124",
-      "server_port": 443,
-      "uuid": "b2f2f9f2-1864-48ea-839b-22815faff1f1",
-      "tls": {
-        "enabled": true,
-        "server_name": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "freesocks.work",
+      "server_port": 2052,
+      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/@BlueKnight_net--@BlueKnight_net",
         "headers": {
-          "Host": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev"
+          "Host": "uwu.blueknightnet.qzz.io"
         }
       }
     },
@@ -31,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
