@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇺 MU 01 - xiaohe
-  server: 185.162.229.30
-  port: 8880
+- name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  server: 162.159.24.131
+  port: 2086
   udp: true
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime61.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇺 MU 01 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇺 MU 01 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
 rules:
 - MATCH,PROXIES
