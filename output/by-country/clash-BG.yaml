@@ -37,7 +37,7 @@ proxies:
     public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
     short-id: e3daad69
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
   server: 136.175.82.85
   port: 18775
@@ -51,6 +51,13 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: addons.mozilla.org
   client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
+  server: 213.183.63.60
+  port: 9054
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +68,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,5 +79,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
 rules:
 - MATCH,PROXIES
