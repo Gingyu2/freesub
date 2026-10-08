@@ -31,7 +31,7 @@ proxies:
     headers:
       Host: ais.speedtest.net
 - name: 🇹🇭 泰国 (Thailand) 04 - xiaohe
-  server: 104.16.10.185
+  server: 104.19.32.166
   port: 443
   udp: true
   type: vless
